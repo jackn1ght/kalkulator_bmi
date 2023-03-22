@@ -89,15 +89,15 @@ form.addEventListener('submit', (event) => {
 	    }else if(jumlah >= 18.5 && jumlah < 25){
 	    	pernyataan_1.textContent = 'Normal (Ideal)';
 	    	pernyataan_2.textContent = 'Sebagai seorang '+form.elements['jenis-kelamin'].value+' berusia '+form.elements['usia'].value+' tahun, anda memiliki berat badan yang ideal';
-	    	pernyataan_3.textContent = 'Hasil BMI anda diantara 18.5 & 24';
+	    	pernyataan_3.textContent = 'Hasil BMI anda diantara 18.5 & 25';
 	    }else if(jumlah >= 25 && jumlah < 30){
 	    	pernyataan_1.textContent = 'Kelebihan berat badan';
 	    	pernyataan_2.textContent = 'Sebagai seorang '+form.elements['jenis-kelamin'].value+' berusia '+form.elements['usia'].value+' tahun, anda memiliki berat badan berlebih';
-	    	pernyataan_3.textContent = 'Hasil BMI anda diantara 25 & 29';
+	    	pernyataan_3.textContent = 'Hasil BMI anda diantara 25 & 30';
 	    }else{
 	    	pernyataan_1.textContent = 'Kegemukan (Obesitas)';
 	    	pernyataan_2.textContent = 'Sebagai seorang '+form.elements['jenis-kelamin'].value+' berusia '+form.elements['usia'].value+' tahun, anda menderita obesitas';
-	    	pernyataan_3.textContent = 'Hasil BMI anda diatas 29';
+	    	pernyataan_3.textContent = 'Hasil BMI anda diatas 30';
 	    }
 	    hasil.textContent = jumlah.toFixed(1);
 	    footer.style.position = 'absolute';
