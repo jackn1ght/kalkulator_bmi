@@ -10,7 +10,10 @@ const perempuan = document.querySelector('#perempuan');
 const form  = document.querySelector('.form');
 var dark = document.querySelector('.dark');
 var light = document.querySelector('.light');
+var card = document.querySelector('.card');
 var body = document.querySelector('body');
+var input = document.querySelectorAll('.input');
+var button = document.querySelectorAll('.button');
 var header = document.querySelector('header');
 var footer = document.querySelector('footer');
 var reset = document.querySelector('#reset');
@@ -28,6 +31,13 @@ dark.onclick = function(){
 	header.style.background = 'rgb(25, 167, 206)';
 	footer.style.background = 'rgb(20, 108, 148)';
 	body.style.color = 'rgb(0, 0, 0)';
+	for(var i = 0; i < input.length; i++){
+		input[i].style.color = '#000';
+	}
+	for(var i = 0; i < button.length; i++){
+		button[i].style.color = '#000';
+	}
+	card.style.border= '1px solid #000';
 };
 light.onclick = function(){
 	light.style.display = 'none';
@@ -36,6 +46,13 @@ light.onclick = function(){
 	footer.style.background = 'rgb(46, 79, 79)';
 	body.style.background = 'rgb(44, 51, 51)';
 	body.style.color = 'rgb(203, 228, 222)';
+	for(var i = 0; i < input.length; i++){
+		input[i].style.color = 'rgb(203, 228, 222)';
+	}
+	for(var i = 0; i < button.length; i++){
+		button[i].style.color = 'rgb(203, 228, 222)';
+	}
+	card.style.border= '1px solid rgb(203, 228, 222)';
 };
 reset.onclick = function(){
 	laki_laki.checked = false;
