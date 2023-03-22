@@ -188,4 +188,13 @@ form{
 	.form-control input{
 		width: 100%;
 	}
+	.radio{
+		padding: 0;
+	}
+	.radio span{
+		margin-left: 0;
+	}
+	.radio span:nth-child(2){
+		margin-left: 20px;
+	}
 }
