@@ -197,4 +197,7 @@ form{
 	.radio span:nth-child(2){
 		margin-left: 20px;
 	}
+	.hasil .card{
+		background: none;
+	}
 }
